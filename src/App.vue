@@ -1,20 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <TicTacToeBoard />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TicTacToeBoard from './components/TicTacToeBoard.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TicTacToeBoard
   }
-}
+};
 </script>
 
 <style>
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
